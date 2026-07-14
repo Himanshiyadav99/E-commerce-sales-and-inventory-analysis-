@@ -1,0 +1,7 @@
+{
+  "bundle": "t001_ecommerce_profitability",
+  "source_file": "Program 1.sas",
+  "source_blob_sha": "4ca9f140a928f7b19a2121993385525f67d509f8",
+  "source_commit": "8f847deaf7beab642dbda62862556844cc502fcd",
+  "notes": "E-commerce profitability/inventory pipeline. Author's external PROC IMPORT (Amzon.xlsx, path outside repo) replaced by a 10-row inline sample with identical columns feeding ec_data_clean_final; all downstream author logic (PROC MEANS/FREQ, revenue+profit DATA step, loss_products/high_return/slow_moving/category_profit/supplier_profit PROC SQL, PROC PRINT, profitability SGPLOTs) unchanged. Also bridges the upstream naming gap (import->work.amazon vs downstream ec_data_clean_final). loss_products correctly returns 0 rows (matches README note); surfaced via PROC PRINT instead of an empty vbar."
+}

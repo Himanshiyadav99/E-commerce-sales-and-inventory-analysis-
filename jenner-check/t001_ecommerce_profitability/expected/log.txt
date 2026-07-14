@@ -1,0 +1,74 @@
+NOTE: Jenner v1.5.30 (build v1.5.30+unknown.20260714T061458Z.x86_64-unknown-linux-gnu)
+
+NOTE: Option OBS changed to 100.
+NOTE: DATA ec_data_clean_final
+
+NOTE: Processing inline DATALINES (10 lines)
+
+NOTE: Read 10 rows from DATALINES.
+NOTE: Wrote ec_data_clean_final (10 rows, 9 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC MEANS
+NOTE: PROC MEANS statement used.
+NOTE: PROC FREQ
+NOTE: ODS plot written: freq_category.spec.json
+NOTE: ODS plot written: freq_supplier.spec.json
+NOTE: PROC FREQ statement used.
+NOTE: DATA ec_analysis
+
+
+NOTE: Read 10 rows from ec_data_clean_final.
+NOTE: Wrote ec_analysis (10 rows, 11 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC SQL 
+
+NOTE: Table loss_products created.
+NOTE: PROC SQL statement used.
+NOTE: PROC PRINT data=loss_products
+
+NOTE: PROC SQL 
+
+NOTE: Table high_return created.
+NOTE: PROC SQL statement used.
+NOTE: DATA inventory_analysis
+
+
+NOTE: Read 10 rows from ec_analysis.
+NOTE: Wrote inventory_analysis (10 rows, 12 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC SQL 
+
+NOTE: Table slow_moving created.
+NOTE: PROC SQL statement used.
+NOTE: PROC PRINT data=slow_moving
+
+NOTE: PROC PRINT completed: 10 observations printed, 5 variables
+NOTE: PROC SQL 
+
+NOTE: Table category_profit created.
+NOTE: PROC SQL statement used.
+NOTE: PROC PRINT data=category_profit
+
+NOTE: PROC PRINT completed: 4 observations printed, 3 variables
+NOTE: PROC SQL 
+
+NOTE: Table supplier_profit created.
+NOTE: PROC SQL statement used.
+NOTE: PROC PRINT data=supplier_profit
+
+NOTE: PROC PRINT completed: 3 observations printed, 3 variables
+NOTE: PROC SGPLOT data=category_profit
+
+NOTE: PROC SGPLOT output written to: ./ods_output/sgplot.svg
+NOTE: PROC SGPLOT data=supplier_profit
+
+NOTE: PROC SGPLOT output written to: ./ods_output/sgplot1.svg
+NOTE: PROC SGPLOT data=slow_moving
+
+NOTE: PROC SGPLOT output written to: ./ods_output/sgplot2.svg

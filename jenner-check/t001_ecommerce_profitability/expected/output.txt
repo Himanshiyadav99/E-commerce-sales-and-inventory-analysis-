@@ -1,0 +1,81 @@
+                                                  The MEANS Procedure
+
+ Variable                   N   N Miss
+ -------------------------------------
+ Price                     10        0
+ Units_Sold                10        0
+ Inventory                 10        0
+ Discount_Percentage       10        0
+ Rating                    10        0
+ Return_Rate               10        0
+ -------------------------------------
+
+                                                   The FREQ Procedure
+
+                                         Cumulative    Cumulative
+Category       Frequency    Percent     Frequency      Percent
+--------------------------------------------------------------------
+Clothing               3     30.00            3        30.00
+Electronics            3     30.00            6        60.00
+Home                   2     20.00            8        80.00
+Toys                   2     20.00           10       100.00
+
+                                        Cumulative    Cumulative
+Supplier      Frequency    Percent     Frequency      Percent
+-------------------------------------------------------------------
+Supplier_A            4     40.00            4        40.00
+Supplier_B            3     30.00            7        70.00
+Supplier_C            3     30.00           10       100.00
+                                                  Loss-Making Products
+
+No observations in dataset.
+
+                                                  Loss-Making Products
+
+                                                  Loss-Making Products
+
+                                                  Loss-Making Products
+
+
+  Obs  product_id     category  inventory  units_sold     stock_days
+-----  ----------  -----------  ---------  ----------  -------------
+    1  P1006       Electronics        400          10   39.999600004
+    2  P1008       Home               600          20  29.9998500008
+    3  P1002       Electronics        500          40  12.4999687501
+    4  P1010       Electronics        250          55    4.545446281
+    5  P1004       Home               200          60   3.3333277778
+    6  P1001       Clothing           300         120   2.4999979167
+    7  P1009       Clothing           110          90   1.2222208642
+    8  P1003       Toys                90          80   1.1249985938
+    9  P1005       Clothing           150         200    0.749999625
+   10  P1007       Toys                40         150   0.2666664889
+
+                                                  Loss-Making Products
+
+                                                  Loss-Making Products
+
+
+  Obs     category  total_revenue  total_profit
+-----  -----------  -------------  ------------
+    1  Electronics          18060    16238.0982
+    2  Clothing             10980    9535.92456
+    3  Home                  3900       3899.34
+    4  Toys                  3040       2245.11
+
+                                                  Loss-Making Products
+
+                                                  Loss-Making Products
+
+
+  Obs    supplier  total_revenue  total_profit
+-----  ----------  -------------  ------------
+    1  Supplier_B          15160     13850.238
+    2  Supplier_A          14100    12720.2352
+    3  Supplier_C           6720    5347.99956
+
+                                                  Loss-Making Products
+
+                                                  Loss-Making Products
+
+                                                  Loss-Making Products
+
