@@ -1,0 +1,21 @@
+{
+  "_captured_at": "2026-07-14T14:38:30Z",
+  "_captured_run_id": "r_f9d413cdfadb422eb7f126c002bf2d59",
+  "status": "ok",
+  "exit_code": 0,
+  "log_contains": [
+    "Wrote ec_data_clean_final (10 rows, 9 columns).",
+    "Wrote ec_analysis (10 rows, 11 columns).",
+    "Wrote inventory_analysis (10 rows, 12 columns).",
+    "PROC MEANS statement used.",
+    "PROC FREQ statement used."
+  ],
+  "log_does_not_contain": [
+    "ERROR:",
+    "[JENNER-ERROR"
+  ],
+  "diagnostics": {
+    "parse_warnings": [],
+    "runtime_warnings": []
+  }
+}
